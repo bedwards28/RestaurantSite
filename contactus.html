@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Kicken' Chicken - Contact</Title>
+    </head>
+    <body>
+        <h1 align="center">Kicken' Chicken</h1>
+        <hr/>
+    
+        <div align="center">
+            <!-- Navigation -->
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+        <hr/>
+    </body>
+
+    <div align="center">
+        <!-- contact form -->
+        <form action="#" method="post">
+            <div>
+                <label id="FullNameLabel" for="FullName">Name: </label>
+                <input id="FullName" name="FullName" type="text" />
+            </div>
+            <br/>
+            <div>
+                <label id="EmailLabel" for="Email">Email: </label>
+                <input id="Email" name="Email" type="text" />
+            </div>
+            <br/>
+            <div>
+                <label id="PhoneLabel" for="Phone">Phone: </label>
+                <input id="Phone" name="Phone" type="text" />
+            </div>
+            <br/>
+            <div>
+                <label id="ReasonLabel" for="Reason">Reason: </label>
+                <select name="Reason">
+                    <option value="Catering">Catering</option>
+                    <option value="PrivateParty">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
+                <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
+            </div>
+            <br/>
+            <div>
+                <label id="VisitedLabel" for="Visisted">
+                    Have you been to the restaurant?
+                </label>
+                <input type="radio" id="Visited" name="Visisted" value="No" checked />No 
+                <input type="radio" id="Visited" name="Visisted" value="Yes" />Yes
+            </div>
+            <br/>
+            <div>
+                <label id="DaysLabel" for="Days">
+                    Best days to contact you: 
+                </label>
+                <input type="checkbox" name="day" value="Monday">M 
+                <input type="checkbox" name="day" value="Tuesday">T 
+                <input type="checkbox" name="day" value="Wednesday">W 
+                <input type="checkbox" name="day" value="Thursday">Th 
+                <input type="checkbox" name="day" value="Friday">F 
+            </div>
+            <br/>
+            <div>
+                <input type="submit" id="SubmitButton" value="Send Request"/>
+            </div>
+            <br/>
+        </form>
+    </div>
+    <hr/>
+
+    <div align="center">
+        <p>123 1st Street, Burnsville, MN 55123</p>
+        <p>555-123-4567</p>
+    </div>
+</html>
