@@ -1,12 +1,49 @@
+th {
+    font-size: 1.75em;
+}
+
+td {
+    padding: 15px;
+    width: 300px;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.content {
+    background-color: #d38958;
+}
+
+.required {
+    font-weight: bold;
+}
+
+#menu {
+    margin: auto;
+    width: 1000px;
+    font-family: "Comfortaa", cursive;
+    background-color: #d38958;
+}
+
 #footer {
     text-align: center;
 }
 
 #header {
     text-align: center;
+    font-family: "Indie Flower", cursive;
 }
 
 #restaurantDescription {
     max-width: 400px;
     margin: auto;
+}
+
+@font-face {
+    font-family: "Indie Flower";
+    src: url('https://fonts.googleapis.com/css?family=Indie+Flower');
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url('https://fonts.googleapis.com/css?family=Comfortaa');
 }
