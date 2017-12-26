@@ -1,9 +1,21 @@
+a:visited {
+    color: red;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 th {
     font-size: 1.75em;
 }
 
 td {
-    padding: 15px;
+    padding: 10px;
     width: 300px;
     text-align: justify;
     vertical-align: top;
