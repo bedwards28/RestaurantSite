@@ -1,92 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lan="en">
     <head>
         <Title>Kicken' Chicken - Contact</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
-        <style>
-            #contactForm {
-                margin: auto;
-                width: 400px;   
-            }
-        </style>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
     </head>
     <body>
-        <div id="header">
-            <h1>Kicken' Chicken</h1>
-            <hr/>
-        
-            <div>
-                <!-- Navigation -->
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contactUs.html">Contact Us</a>
+        <div class="container-fluid">
+            <div id="header">
+                <h1>Kicken' Chicken</h1>
+                <hr/>
+            
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></span></a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li class="active"><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+
+                <hr/>
+            </div>
+
+            <div id="contactForm">
+                <form action="#" method="post">
+                    <div>
+                        <label id="FullNameLabel" for="FullName" class="required">Name: </label>
+                        <input id="FullName" name="FullName" type="text" />
+                    </div>
+                    <br/>
+                    <div>
+                        <label id="EmailLabel" for="Email" class="required">Email: </label>
+                        <input id="Email" name="Email" type="text" />
+                    </div>
+                    <br/>
+                    <div>
+                        <label id="PhoneLabel" for="Phone">Phone: </label>
+                        <input id="Phone" name="Phone" type="text" />
+                    </div>
+                    <br/>
+                    <div>
+                        <label id="ReasonLabel" for="Reason" class="required">Reason: </label>
+                        <select name="Reason">
+                            <option value="Catering">Catering</option>
+                            <option value="PrivateParty">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div>
+                        <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
+                        <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
+                    </div>
+                    <br/>
+                    <div>
+                        <label id="VisitedLabel" for="Visisted">
+                            Have you been to the restaurant?
+                        </label>
+                        <input type="radio" id="Visited" name="Visisted" value="No" checked />No 
+                        <input type="radio" id="Visited" name="Visisted" value="Yes" />Yes
+                    </div>
+                    <br/>
+                    <div>
+                        <label id="DaysLabel" for="Days">
+                            Best days to contact you: 
+                        </label>
+                        <input type="checkbox" name="day" value="Monday">M 
+                        <input type="checkbox" name="day" value="Tuesday">T 
+                        <input type="checkbox" name="day" value="Wednesday">W 
+                        <input type="checkbox" name="day" value="Thursday">Th 
+                        <input type="checkbox" name="day" value="Friday">F 
+                    </div>
+                    <br/>
+                    <div>
+                        <input type="submit" id="SubmitButton" value="Send Request"/>
+                    </div>
+                    <br/>
+                </form>
             </div>
             <hr/>
-        </div>
 
-        <div id="contactForm">
-            <!-- contact form -->
-            <form action="#" method="post">
-                <div>
-                    <label id="FullNameLabel" for="FullName" class="required">Name: </label>
-                    <input id="FullName" name="FullName" type="text" />
-                </div>
-                <br/>
-                <div>
-                    <label id="EmailLabel" for="Email" class="required">Email: </label>
-                    <input id="Email" name="Email" type="text" />
-                </div>
-                <br/>
-                <div>
-                    <label id="PhoneLabel" for="Phone">Phone: </label>
-                    <input id="Phone" name="Phone" type="text" />
-                </div>
-                <br/>
-                <div>
-                    <label id="ReasonLabel" for="Reason" class="required">Reason: </label>
-                    <select name="Reason">
-                        <option value="Catering">Catering</option>
-                        <option value="PrivateParty">Private Party</option>
-                        <option value="Feedback">Feedback</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <br/>
-                <div>
-                    <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
-                    <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
-                </div>
-                <br/>
-                <div>
-                    <label id="VisitedLabel" for="Visisted">
-                        Have you been to the restaurant?
-                    </label>
-                    <input type="radio" id="Visited" name="Visisted" value="No" checked />No 
-                    <input type="radio" id="Visited" name="Visisted" value="Yes" />Yes
-                </div>
-                <br/>
-                <div>
-                    <label id="DaysLabel" for="Days">
-                        Best days to contact you: 
-                    </label>
-                    <input type="checkbox" name="day" value="Monday">M 
-                    <input type="checkbox" name="day" value="Tuesday">T 
-                    <input type="checkbox" name="day" value="Wednesday">W 
-                    <input type="checkbox" name="day" value="Thursday">Th 
-                    <input type="checkbox" name="day" value="Friday">F 
-                </div>
-                <br/>
-                <div>
-                    <input type="submit" id="SubmitButton" value="Send Request"/>
-                </div>
-                <br/>
-            </form>
-        </div>
-        <hr/>
-
-        <div id="footer">
-            <p>123 1st Street, Burnsville, MN 55123</p>
-            <p>555-123-4567</p>
+            <div id="footer">
+                <p>123 1st Street, Burnsville, MN 55123</p>
+                <p>555-123-4567</p>
+            </div>
         </div>
     </body>
 </html>

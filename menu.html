@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <Title>Kicken' Chicken - Menu</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
     </head>
     <body>
-        <div id="header">
-            <h1>Kicken' Chicken</h1>
-            <hr/>
-        
-            <div>
-                <!-- Navigation -->
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contactUs.html">Contact Us</a>
-            </div>
-            <hr/>
-        </div>
+        <div class="container-fluid">
+            <div id="header">
+                <h1>Kicken' Chicken</h1>
+                <hr/>
+            
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></span></a></li>
+                    <li class="active"><a href="menu.html">Menu</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
 
-        <div id="menu">
-            <!-- menu -->
-            <table>
-                <tr>
-                    <tr>
-                        <th>Chicken Fingers</th>
-                        <th>Steak Cut Fries</th>
-                        <th>Mac' and Cheese</th>
-                    </tr>
-                    <tr>
-                        <td>
+                <hr/>
+            </div>
+
+            <div id="menu">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Chicken Fingers</h3>
+                        <p>
                             We use always fresh, never frozen premium chicken 
                             breast tenderloins to make the most tender ckicken 
                             fingers possible. Every piece is hand-dipped and 
                             breaded fresh for every order.
-                        </td>
-                        <td>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Steak Cut Fries</h3>
+                        <p>
                             Our steak cut fries are center-cut from grade A 
                             potatoes. They are cooked to a golden brown while 
                             remaining slightly soft in the middle. They are 
@@ -42,66 +45,70 @@
                             and lightly seasoned immediately after leaving 
                             the frier. They go great with Kicken' Sauce, 
                             ketchup, or just by themselves!
-                        </td>
-                        <td>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Mac' and Cheese</h3>
+                        <p>
                             We use a mixture of cheddar cheeses to coat each 
                             piece of rotini pasta for a delicious twist on a 
                             family favorite.
-                        </td>
-                    </tr>
-                </tr>
-                <tr>
-                    <tr>
-                        <th>Kicken' Sauce</th>
-                        <th>Garlic Bread</th>
-                        <th>Drinks</th>
-                    </tr>
-                    <tr>
-                        <td>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Kicken' Sauce</h3>>
+                        <p>
                             Our award winning Kicken' Sauce is barbecue sauce 
                             with a twist. We use our proprietary blend of premium 
                             seasonings and spices in our sauce and makenew batches 
                             every day.
-                        </td>
-                        <td>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Garlic Bread</h3>
+                        <p>
                             Our garlic bread is cooked to order from sesame 
                             seeded pull-apart bread, which preserves freshness 
                             better than pre-sliced bread. Each piece is brushed 
                             with the perfect amount of butter and garlic before 
                             grilling on a flat top surface to create its toasty 
                             buttery deliciousness.
-                        </td>
-                        <td>
-                            <table id="beverages">
-                                <tbody>
-                                    <tr>
-                                        <td>Coca-Cola Products</td>
-                                        <td>$1.50</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lemonade</td>
-                                        <td>$1.75</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sweet Tea</td>
-                                        <td>$1.75</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bottled Water</td>
-                                        <td>$2.50</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tr>
-            </table>
-        </div>
-        <hr/>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Drinks</h3>
+                        <table id="beverages">
+                            <tbody>
+                                <tr>
+                                    <td>Coca-Cola Products</td>
+                                    <td>$1.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Lemonade</td>
+                                    <td>$1.75</td>
+                                </tr>
+                                <tr>
+                                    <td>Sweet Tea</td>
+                                    <td>$1.75</td>
+                                </tr>
+                                <tr>
+                                    <td>Bottled Water</td>
+                                    <td>$2.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-        <div id="footer">
-            <p>123 1st Street, Burnsville, MN 55123</p>
-            <p>555-123-4567</p>
+            <hr/>
+
+            <div id="footer">
+                <p>123 1st Street, Burnsville, MN 55123</p>
+                <p>555-123-4567</p>
+            </div>
         </div>
     </body>
 </html>

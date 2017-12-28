@@ -31,9 +31,19 @@ td {
 
 #menu {
     margin: auto;
-    width: 1000px;
+    /* width: 1000px; */
     font-family: "Comfortaa", cursive;
     background-color: #d38958;
+    text-align: justify;
+}
+
+#menu h3 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#menu p {
+    padding: 5px 15px;
 }
 
 #footer {
@@ -48,6 +58,11 @@ td {
 #restaurantDescription {
     max-width: 400px;
     margin: auto;
+}
+
+#contactForm {
+    margin: auto;
+    width: 400px;   
 }
 
 @font-face {
